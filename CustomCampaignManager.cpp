@@ -119,8 +119,8 @@ bool CustomCampaignManager::findDefaultRootDir() {
         return true;
     }
     tmpDir = "C:\\Program Files\\StarCraft II\\";
-    fs::path scPath(tmpDir);
-    if(fs::is_directory(scPath)) {
+    fs::path sc2Path(tmpDir);
+    if(fs::is_directory(sc2Path)) {
         sc2Root = tmpDir;
         return true;
     }
